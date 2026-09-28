@@ -1,0 +1,100 @@
+{"category": "factual", "question": "How many papers did conf/kdd publish in 2018?", "expected_contains": "320"}
+{"category": "factual", "question": "How many papers did conf/kdd publish in 2020?", "expected_contains": "463"}
+{"category": "factual", "question": "How many papers did conf/kdd publish in 2022?", "expected_contains": "534"}
+{"category": "factual", "question": "How many papers did conf/vldb publish in 2018?", "expected_contains": "76"}
+{"category": "factual", "question": "How many papers did conf/vldb publish in 2020?", "expected_contains": "43"}
+{"category": "factual", "question": "How many papers did conf/vldb publish in 2022?", "expected_contains": "34"}
+{"category": "factual", "question": "How many papers did conf/sigmod publish in 2018?", "expected_contains": "235"}
+{"category": "factual", "question": "How many papers did conf/sigmod publish in 2020?", "expected_contains": "282"}
+{"category": "factual", "question": "How many papers did conf/sigmod publish in 2022?", "expected_contains": "237"}
+{"category": "factual", "question": "How many papers did conf/icml publish in 2018?", "expected_contains": "621"}
+{"category": "factual", "question": "How many papers did conf/icml publish in 2020?", "expected_contains": "1103"}
+{"category": "factual", "question": "How many papers did conf/icml publish in 2022?", "expected_contains": "1248"}
+{"category": "factual", "question": "How many papers did conf/aaai publish in 2018?", "expected_contains": "1225"}
+{"category": "factual", "question": "How many papers did conf/aaai publish in 2020?", "expected_contains": "1905"}
+{"category": "factual", "question": "How many papers did conf/aaai publish in 2022?", "expected_contains": "1702"}
+{"category": "factual", "question": "How many papers did conf/acl publish in 2018?", "expected_contains": "455"}
+{"category": "factual", "question": "How many papers did conf/acl publish in 2020?", "expected_contains": "887"}
+{"category": "factual", "question": "How many papers did conf/acl publish in 2022?", "expected_contains": "1109"}
+{"category": "factual", "question": "How many papers did conf/www publish in 2018?", "expected_contains": "593"}
+{"category": "factual", "question": "How many papers did conf/www publish in 2020?", "expected_contains": "504"}
+{"category": "factual", "question": "How many papers did conf/www publish in 2022?", "expected_contains": "592"}
+{"category": "factual", "question": "How many papers did conf/sigir publish in 2018?", "expected_contains": "314"}
+{"category": "factual", "question": "How many papers did conf/sigir publish in 2020?", "expected_contains": "395"}
+{"category": "factual", "question": "How many papers did conf/sigir publish in 2022?", "expected_contains": "454"}
+{"category": "factual", "question": "How many papers has Philip S. Yu published in this dataset?", "expected_contains": "1031"}
+{"category": "factual", "question": "How many papers has Jiawei Han 0001 published in this dataset?", "expected_contains": "713"}
+{"category": "factual", "question": "How many papers has Yoshua Bengio published in this dataset?", "expected_contains": "371"}
+{"category": "factual", "question": "How many papers has Luc Van Gool published in this dataset?", "expected_contains": "562"}
+{"category": "factual", "question": "How many papers has Dacheng Tao published in this dataset?", "expected_contains": "684"}
+{"category": "factual", "question": "How many papers has Bernhard Sch\u00f6lkopf published in this dataset?", "expected_contains": "384"}
+{"category": "factual", "question": "How many papers has Eric P. Xing published in this dataset?", "expected_contains": "351"}
+{"category": "factual", "question": "How many papers has Christos Faloutsos published in this dataset?", "expected_contains": "404"}
+{"category": "factual", "question": "How many papers are in the dblp dataset in total?", "expected_contains": "334137"}
+{"category": "factual", "question": "How many distinct authors are in the dataset?", "expected_contains": "377243"}
+{"category": "factual", "question": "How many venues are covered by this dataset?", "expected_contains": "38"}
+{"category": "factual", "question": "How many total papers are there from conf/cvpr?", "expected_contains": "30107"}
+{"category": "factual", "question": "How many total papers are there from conf/nips?", "expected_contains": "29358"}
+{"category": "factual", "question": "How many total papers are there from conf/aaai?", "expected_contains": "28454"}
+{"category": "factual", "question": "How many total papers are there from conf/acl?", "expected_contains": "21405"}
+{"category": "factual", "question": "How many total papers are there from conf/ijcnn?", "expected_contains": "18966"}
+{"category": "topical", "question": "Find me a paper about diversity in search result ranking.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about graph neural networks.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about recommendation systems.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about adversarial examples in deep learning.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about federated learning.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about retrieval-augmented generation.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about self-supervised learning.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about knowledge graph embeddings.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about named entity recognition.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about query result summarization.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about citation recommendation.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about cross-lingual information retrieval.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about session-based recommendation.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about learning to rank.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about neural machine translation.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about graph convolutional networks.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about attention mechanisms in transformers.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about few-shot learning.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about contrastive learning.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about generative adversarial networks.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about text classification.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about entity resolution.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about social network analysis.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about anomaly detection in graphs.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about multi-task learning.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about domain adaptation.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about explainable AI.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about reinforcement learning for recommendation.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about sentiment analysis.", "expect_nonempty_citation": true}
+{"category": "topical", "question": "Find me a paper about question answering systems.", "expect_nonempty_citation": true}
+{"category": "graph", "question": "Are Maosong Sun 0001 and Zhiyuan Liu 0001 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Kang Liu 0001 and Jun Zhao 0001 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Jiafeng Guo and Xueqi Cheng 0001 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Yiqun Liu 0001 and Shaoping Ma co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Min Zhang 0006 and Shaoping Ma co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Yiqun Liu 0001 and Min Zhang 0006 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Fandong Meng and Jie Zhou 0016 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Tie-Yan Liu and Tao Qin 0001 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Weinan Zhang 0001 and Yong Yu 0001 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Wenjie Zhang 0001 and Ying Zhang 0001 co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Qi Zhang 0001 and Tao Gui co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Qi Liu 0003 and Enhong Chen co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Ye Yuan 0001 and Guoren Wang co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Are Le Sun 0001 and Xianpei Han co-authors?", "expected_contains": "yes_coauthors"}
+{"category": "graph", "question": "Is Philip S. Yu an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Jiawei Han 0001 an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Charu C. Aggarwal an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Luc Van Gool an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Jiliang Tang an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Eric P. Xing an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Bernhard Sch\u00f6lkopf an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Heng Ji 0001 an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Xiaodan Liang an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Is Shuicheng Yan an important bridge author connecting different research communities?", "expect_nonempty": true}
+{"category": "graph", "question": "Who are Philip S. Yu's top co-authors?", "expect_nonempty": true}
+{"category": "graph", "question": "Who are Jiawei Han 0001's top co-authors?", "expect_nonempty": true}
+{"category": "graph", "question": "Who are Yoshua Bengio's top co-authors?", "expect_nonempty": true}
+{"category": "graph", "question": "Who are Luc Van Gool's top co-authors?", "expect_nonempty": true}
+{"category": "graph", "question": "Who are Dacheng Tao's top co-authors?", "expect_nonempty": true}
+{"category": "graph", "question": "How is Philip S. Yu connected to Yoshua Bengio through co-authorship?", "expected_contains": "Zhiping Xiao"}

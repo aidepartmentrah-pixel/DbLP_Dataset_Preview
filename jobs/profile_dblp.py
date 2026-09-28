@@ -21,6 +21,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from dblp_xml import author_key as _author_key
+from dblp_xml import element_text as _element_text
 from dblp_xml import stream_records
 from dblp_xml import venue_prefix as _venue_prefix
 
@@ -110,7 +111,7 @@ def profile(xml_gz_path: Path, dtd_path: Path, limit: int | None = None) -> Prof
             akey = _author_key(a)
             stats.papers_per_author[akey] += 1
 
-            name_text = (a.text or "").strip()
+            name_text = _element_text(a)
             m = HOMONYM_SUFFIX_RE.match(name_text)
             if m:
                 stats.homonym_suffix_names[m.group(1)] += 1

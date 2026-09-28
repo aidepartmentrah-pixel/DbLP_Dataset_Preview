@@ -17,6 +17,7 @@ named `dblp.dtd` sits next to the `.xml.gz` being parsed before parsing.
 
 from __future__ import annotations
 
+import html
 import shutil
 from pathlib import Path
 
@@ -34,6 +35,36 @@ PUBLICATION_TAGS = (
     "mastersthesis",
 )
 ALL_RECORD_TAGS = PUBLICATION_TAGS + ("www",)
+
+
+def element_text(elem) -> str:
+    """Full text content of an element, robust to DTD-declared entities
+    (e.g. `&uuml;`) landing as unresolved `Entity` child nodes instead of
+    being merged into `.text`.
+
+    Real, reproducible finding: with `load_dtd=True, resolve_entities=True`,
+    a small in-memory XML document resolves `&uuml;` straight into `.text`
+    ("Jurgen" -> "Jürgen"), but streaming the real multi-GB dblp dump through
+    `iterparse` does not - libxml2's incremental push parser instead leaves
+    an `_Entity` node in place (its own `.text` is the literal `'&uuml;'`,
+    with the rest of the string in its `.tail`), so plain `elem.text` or
+    `findtext()` silently truncates at the entity ("Jürgen Schneider"
+    observed as just "J" - and since dblp author identity in this pipeline
+    is keyed by name text, this was silently merging unrelated real authors
+    who happened to truncate to the same prefix). `itertext()` walks all of
+    an element's text content including `_Entity` nodes' literal text, and
+    `html.unescape` (dblp's DTD entities are exactly the standard HTML
+    entity set) turns that literal text back into the real character.
+    """
+    return html.unescape("".join(elem.itertext())).strip()
+
+
+def child_text(parent, tag: str) -> str | None:
+    """Like `parent.findtext(tag)`, but entity-safe - see `element_text`."""
+    child = parent.find(tag)
+    if child is None:
+        return None
+    return element_text(child)
 
 
 def venue_prefix(key: str) -> str:
@@ -60,8 +91,7 @@ def author_key(author_elem) -> str:
     orcid = author_elem.get("orcid")
     if orcid:
         return f"orcid:{orcid}"
-    text = (author_elem.text or "").strip()
-    return f"name:{text}"
+    return f"name:{element_text(author_elem)}"
 
 
 def _ensure_dtd_alongside(xml_gz_path: Path, dtd_path: Path) -> None:

@@ -1,5 +1,6 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 
+import { useTheme } from "./lib/useTheme";
 import Author from "./pages/Author";
 import Chat from "./pages/Chat";
 import Dashboard from "./pages/Dashboard";
@@ -14,6 +15,8 @@ const links = [
 ];
 
 export default function App() {
+  const [theme, toggleTheme] = useTheme();
+
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -29,6 +32,9 @@ export default function App() {
             </NavLink>
           ))}
         </nav>
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === "light" ? "Dark mode" : "Light mode"}
+        </button>
       </aside>
       <main className="content">
         <Routes>
